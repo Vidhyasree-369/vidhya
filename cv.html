@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Experiment Number - 1</title>
+    </head>
+    <link rel="stylesheet" href="Style.css">
+    <body class="body">        
+        <center class="heading" style="color: white;">Deepa N</center>
+        <div class="name" style="color: white;">
+            <strong>Grootan Technologies</strong>
+        </div>
+        <center>
+            <h1 style="color: white;" id="Login-tag">Login</h1>
+            <h1 style="color: white; display: none;" id="Registeration-tag">Registration</h1>
+            <div class="content" >
+                <div id="Login-content">
+                    <div class="lb">
+                        <label for="Username">Username: </label>
+                    </div>
+                    <input type="text" placeholder="Enter Ur Username"/>
+                    <br>
+                    <div class="lb">
+                        <label for="Roll.No">Roll No: </label>
+                    </div>
+                    <input type="text"  placeholder="Enter Ur Roll Number"/>
+                    <br>
+                    <div class="lb">
+                        <label for="Email">Email: </label>
+                    </div>
+                    <input type="text" placeholder="Enter Ur Email id"/>
+                    <div class="lb">
+                        <label for="Password">Password: </label>
+                    </div>
+                    <input type="password" placeholder="Enter your password"/>
+                    <br>
+                    <br>
+                </div>
+                    <div style="display: none; " id="Registeration-content">
+                        <div class="lb">
+                            <label for="Username">Username: </label>
+                        </div>
+                        <input type="text" placeholder="Enter Ur Username"/>
+                        <br>
+                        <div class="lb">
+                            <label for="Roll.No">Roll No: </label>
+                        </div>
+                        <input type="text"  placeholder="Enter Ur Roll Number"/>
+                        <br>
+                        <div class="lb">
+                            <label for="Phone.No">Phone No: </label>
+                        </div>
+                        <input type="text" placeholder="Enter Ur Phone Number"/>
+                        <br>
+                        <div class="lb">
+                            <label for="Email">Email: </label>
+                        </div>
+                        <input type="text" placeholder="Enter Ur Email id"/>
+                        <div class="lb">
+                            <label for="Password">Password: </label>
+                        </div>
+                        <input type="password" placeholder="Enter your password"/>
+                        <div class="lb" style="width: 60%;">
+                            <label for="Confirm Password:">Repeat Password: </label>
+                        </div>
+                        <input type="password" placeholder="Repeat to Confirm your password"/>
+                        <br>                     
+                        <br>
+                    </div>
+                    
+                <div class="button" style="display: flex; justify-content: center;">
+                    <button type="submit" id = "after-registeration" style="display:none" onclick="document.getElementById('Login-content').style.display='block';
+                    document.getElementById('Registeration-content').style.display='none'; document.getElementById('login-button').style.display='block';
+                    document.getElementById('Login-tag').style.display='block';
+                    document.getElementById('Registeration-tag').style.display='none';
+                    document.getElementById('after-registeration').style.display='none'
+                     ">Back to login</button>
+                    <button id="login-button" type="submit">Login</button>
+                    <button onclick="document.getElementById('login-button').style.display='none';
+                    document.getElementById('after-registeration').style.display='block';
+                    document.getElementById('Login-tag').style.display='none';
+                    document.getElementById('Registeration-tag').style.display='block';
+                    document.getElementById('Registeration-content').style.display='block';
+                    document.getElementById('Login-content').style.display='none'; " type="submit">Register</button>
+                </div>
+                
+            </div>
+        </center>        
+    </body>
+</html>
